@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+statsmodels
+requests
+jupyter
+# Optional Chronos-2:
+# chronos-forecasting>=2.0
+# torch
