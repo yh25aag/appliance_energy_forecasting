@@ -1,15 +1,57 @@
+# Python cache
 __pycache__/
 *.py[cod]
+
+# Virtual environments
 .venv/
+venv/
+env/
+
+# Environment / secrets
 .env
+.env.*
+
+# Jupyter
 .ipynb_checkpoints/
+
+# macOS
 .DS_Store
+
+# VS Code / IDE
 .vscode/
 .idea/
+
+# --------------------------------------------------
+# Data
+# --------------------------------------------------
+
+# Keep the downloaded raw dataset out of GitHub.
+# It can be recreated using scripts/download_data.py.
 data/raw/*.csv
-data/processed/*.csv
-outputs/figures/*
-outputs/forecasts/*
-outputs/metrics/*
+
+# Keep processed dataset in GitHub because it is
+# the actual hourly modelling dataset used in the analysis.
+!data/processed/
+!data/processed/*.csv
+
+# --------------------------------------------------
+# Outputs
+# --------------------------------------------------
+
+# Keep generated figures
+!outputs/
+!outputs/figures/
+!outputs/figures/*.png
+!outputs/figures/*.csv
+
+# Keep forecast files
+!outputs/forecasts/
+!outputs/forecasts/*.csv
+
+# Keep evaluation metrics
+!outputs/metrics/
+!outputs/metrics/*.csv
+!outputs/metrics/*.txt
+
+# Keep empty-directory placeholders
 !outputs/**/.gitkeep
-.DS_Store

@@ -1,0 +1,34 @@
+Leakage-safe feature model
+==========================
+
+Forecast horizon: 24 hours
+Test period: final 14 days
+Forecast type: recursive multi-step forecast
+
+Features:
+- hour
+- dayofweek
+- is_weekend
+- hour_sin
+- hour_cos
+- dow_sin
+- dow_cos
+- lag_1
+- lag_2
+- lag_3
+- lag_6
+- lag_12
+- lag_24
+- lag_48
+- lag_72
+- lag_168
+- roll_mean_3
+- roll_std_3
+- roll_mean_6
+- roll_std_6
+- roll_mean_12
+- roll_std_12
+- roll_mean_24
+- roll_std_24
+- roll_mean_168
+- roll_std_168

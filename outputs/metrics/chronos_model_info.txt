@@ -1,0 +1,10 @@
+Chronos foundation-model experiment
+===================================
+
+Model: amazon/chronos-t5-small
+Forecast type: zero-shot univariate
+Device: mps
+Forecast horizon: 24 hours
+Held-out period: 14 days
+Forecast samples: 20
+Future covariates: none
